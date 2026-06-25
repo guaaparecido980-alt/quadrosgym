@@ -64,7 +64,8 @@
                   .from('.hero-actions', { opacity: 0, y: 20, duration: 0.6 }, '-=0.3')
                   .from('.hero-microcopy', { opacity: 0, duration: 0.6 }, '-=0.4');
 
-            if (hasST) {
+            // Animacoes de scroll SOMENTE no desktop (mobile = conteudo estatico, sem risco de texto sumir)
+            if (hasST && !isMobile) {
                 // Reveal staggered por seção (cascata)
                 gsap.utils.toArray('.section').forEach((section) => {
                     if (section.classList.contains('compare')) return; // tratado a parte (efeito wow)
