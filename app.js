@@ -56,16 +56,8 @@
         if (hasGSAP && !reduceMotion) {
             // Hero entrance
             const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-            if (typeof SplitType !== 'undefined') {
-                try {
-                    const split = new SplitType('.hero-title', { types: 'words' });
-                    heroTl.from(split.words, { opacity: 0, y: 40, duration: 1, stagger: 0.06 });
-                } catch (e) {
-                    heroTl.from('.hero-title', { opacity: 0, y: 40, duration: 1 });
-                }
-            } else {
-                heroTl.from('.hero-title', { opacity: 0, y: 40, duration: 1 });
-            }
+            // Entrada por linha (preserva text-wrap: balance, ao contrario do SplitType por palavra)
+            heroTl.from('.hero-title', { opacity: 0, y: 44, duration: 1.1 });
             heroTl.from('.hero .eyebrow', { opacity: 0, y: 20, duration: 0.6 }, 0)
                   .from('.hero-sub', { opacity: 0, y: 24, duration: 0.7 }, '-=0.5')
                   .from('.hero-bullets li', { opacity: 0, y: 18, duration: 0.5, stagger: 0.08 }, '-=0.4')
@@ -83,19 +75,6 @@
                         scrollTrigger: { trigger: section, start: 'top 82%', toggleActions: 'play none none none' }
                     });
                 });
-
-                // Headlines kinetic ao entrar no viewport
-                if (typeof SplitType !== 'undefined') {
-                    gsap.utils.toArray('.section-title').forEach((el) => {
-                        try {
-                            const s = new SplitType(el, { types: 'words' });
-                            gsap.from(s.words, {
-                                opacity: 0, y: 26, duration: 0.7, stagger: 0.05, ease: 'power3.out',
-                                scrollTrigger: { trigger: el, start: 'top 86%' }
-                            });
-                        } catch (e) {}
-                    });
-                }
 
                 // Parallax sutil no hero (desktop)
                 if (!isMobile) {
