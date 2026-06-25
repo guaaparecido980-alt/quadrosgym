@@ -265,10 +265,36 @@ body.hovered .custom-cursor {
 }
 
 .nav-logo {
-    font-family: var(--font-accent);
-    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
     color: var(--color-white);
-    letter-spacing: 2px;
+}
+
+.nav-logo-img {
+    height: 54px;
+    width: 54px;
+    display: block;
+    object-fit: contain;
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 0 12px rgba(189, 0, 255, 0.25));
+}
+
+.nav-logo:hover .nav-logo-img {
+    filter: drop-shadow(0 0 16px rgba(189, 0, 255, 0.5));
+    transform: scale(1.04);
+}
+
+.navbar.scrolled .nav-logo-img {
+    height: 46px;
+    width: 46px;
+}
+
+@media (max-width: 576px) {
+    .nav-logo-img,
+    .navbar.scrolled .nav-logo-img {
+        height: 44px;
+        width: 44px;
+    }
 }
 
 .logo-bold {
