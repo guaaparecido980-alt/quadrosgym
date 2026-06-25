@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadros Gym | Treino Personalizado & Estrutura Premium em Curitiba</title>
-    <meta name="description" content="A nova forma de treinar no Batel, Curitiba. Academia conceito de alto padrão com treino personalizado, limite de alunos por horário e estrutura exclusiva. Matrícula online.">
-    
+
+    <!-- SEO -->
+    <title>Quadros Gym | Academia Premium com Treino Personalizado no Batel</title>
+    <meta name="description" content="Academia premium no Batel, Curitiba, com treino personalizado, hora marcada, máximo de 5 alunos por professor, equipamentos importados e vestiários completos.">
+    <meta name="keywords" content="academia premium Batel, academia no Batel, academia personalizada Curitiba, academia Praça do Japão, academia com personal Curitiba, academia com horário marcado Curitiba, treino personalizado Batel">
+    <meta name="author" content="Quadros Gym">
+    <link rel="canonical" href="https://guaaparecido980-alt.github.io/quadrosgym/">
+    <meta name="robots" content="index, follow">
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://quadrosgym.com.br/">
-    <meta property="og:title" content="Quadros Gym | Treino Personalizado & Estrutura Premium">
-    <meta property="og:description" content="Descubra a Quadros Gym no Batel. Equipamentos italianos, limite de 5 alunos por professor e vestiários premium. Inscreva-se online via Tecnofit.">
-    <meta property="og:image" content="gym_interior.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://guaaparecido980-alt.github.io/quadrosgym/">
+    <meta property="og:title" content="Quadros Gym | Academia Premium no Batel, Curitiba">
+    <meta property="og:description" content="Treino personalizado, hora marcada e no máximo 5 alunos por professor. Estrutura premium no Batel / Praça do Japão. Matrícula online.">
+    <meta property="og:image" content="https://guaaparecido980-alt.github.io/quadrosgym/gym_interior.png">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Favicons & App Icons -->
     <link rel="icon" href="favicon.ico" sizes="any">
@@ -20,44 +28,110 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <meta name="theme-color" content="#08080a">
 
+    <!-- Preload critico -->
+    <link rel="preload" as="image" href="gym_interior.webp" type="image/webp">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
+    <!-- Libs premium (com fallback via typeof no app.js) -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Schema: HealthClub / LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthClub",
+      "name": "Quadros Gym",
+      "description": "Academia premium no Batel, Curitiba, com treino personalizado, hora marcada e no máximo 5 alunos por professor.",
+      "url": "https://guaaparecido980-alt.github.io/quadrosgym/",
+      "image": "https://guaaparecido980-alt.github.io/quadrosgym/gym_interior.png",
+      "telephone": "+55-41-99999-9999",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Sete de Setembro, 4995",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "postalCode": "80240-000",
+        "addressCountry": "BR"
+      },
+      "areaServed": ["Batel", "Água Verde", "Bigorrilho", "Centro", "Mercês", "Curitiba"],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -25.4436907,
+        "longitude": -49.2891963
+      },
+      "sameAs": ["https://www.instagram.com/quadrosgym/"],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "22:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00"}
+      ]
+    }
+    </script>
+
+    <!-- Schema: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"A Quadros Gym funciona como uma academia comum?","acceptedAnswer":{"@type":"Answer","text":"Não. A Quadros une estrutura de academia premium com acompanhamento próximo e horário marcado. O objetivo é evitar superlotação e garantir mais atenção durante o treino."}},
+        {"@type":"Question","name":"Preciso ter experiência para treinar?","acceptedAnswer":{"@type":"Answer","text":"Não. O treino é ajustado ao seu nível, objetivo e histórico. A proposta é justamente dar direção para quem não quer treinar no improviso."}},
+        {"@type":"Question","name":"O limite de 5 alunos por professor é real?","acceptedAnswer":{"@type":"Answer","text":"Sim. Esse limite existe para preservar o padrão de acompanhamento e evitar que o aluno se sinta sozinho no treino."}},
+        {"@type":"Question","name":"Como funciona o horário marcado?","acceptedAnswer":{"@type":"Answer","text":"Você agenda o melhor horário disponível e treina dentro de um fluxo controlado. Isso ajuda a manter organização, conforto e acompanhamento."}},
+        {"@type":"Question","name":"A Quadros é indicada para emagrecimento?","acceptedAnswer":{"@type":"Answer","text":"Sim. O treino pode ser planejado para emagrecimento, hipertrofia, condicionamento, saúde ou retorno à rotina de exercícios."}},
+        {"@type":"Question","name":"Tem vestiário?","acceptedAnswer":{"@type":"Answer","text":"Sim. A estrutura conta com vestiários premium, toalhas limpas e amenities de banho para mais conforto antes e depois do treino."}},
+        {"@type":"Question","name":"A matrícula é feita online?","acceptedAnswer":{"@type":"Answer","text":"Sim. Você pode iniciar sua matrícula pelo link oficial da Tecnofit e depois seguir com a orientação da equipe."}},
+        {"@type":"Question","name":"Posso conhecer antes de me matricular?","acceptedAnswer":{"@type":"Answer","text":"Sim. O ideal é falar com a equipe para entender disponibilidade de horários, planos e funcionamento."}},
+        {"@type":"Question","name":"A Quadros é mais cara que uma academia comum?","acceptedAnswer":{"@type":"Answer","text":"A proposta é diferente. Em vez de competir por preço, a Quadros entrega acompanhamento próximo, ambiente controlado e estrutura premium. É para quem valoriza tempo, conforto e direção no treino."}},
+        {"@type":"Question","name":"Onde fica a Quadros Gym?","acceptedAnswer":{"@type":"Answer","text":"Na Av. Sete de Setembro, 4995, região Batel / Água Verde, próximo à Praça do Japão, em Curitiba."}},
+        {"@type":"Question","name":"Posso treinar todos os dias?","acceptedAnswer":{"@type":"Answer","text":"Depende do plano, objetivo e disponibilidade de horários. A equipe pode orientar o melhor formato para sua rotina."}},
+        {"@type":"Question","name":"Como começo?","acceptedAnswer":{"@type":"Answer","text":"Clique em Reservar minha matrícula ou fale com a equipe. O primeiro passo é verificar disponibilidade e escolher o melhor horário para seu perfil."}}
+      ]
+    }
+    </script>
 </head>
 <body>
 
-    <!-- Purple Glow Custom Cursor -->
-    <div class="custom-cursor"></div>
-    <div class="custom-cursor-dot"></div>
+    <!-- Purple Glow Custom Cursor (desktop) -->
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <div class="custom-cursor-dot" aria-hidden="true"></div>
 
     <!-- Header / Navbar -->
     <header class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo" aria-label="Quadros Gym - Início">
-                <img src="logo-nav.png" alt="Quadros Gym" class="nav-logo-img" width="50" height="50">
+            <a href="#home" class="nav-logo" aria-label="Quadros Gym — início">
+                <img src="logo-mark.png" alt="" class="nav-logo-img" width="46" height="46">
+                <span class="nav-logo-text"><span class="logo-bold">QUADROS</span><span class="logo-light">GYM</span></span>
             </a>
-            
-            <nav class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#concept" class="nav-link">O Conceito</a>
-                <a href="#structure" class="nav-link">Estrutura</a>
-                <a href="#wizard" class="nav-link">Objetivos</a>
-                <a href="#careers" class="nav-link">Carreiras</a>
-                <a href="#contact" class="nav-link">Contato</a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
+                <a href="#conceito" class="nav-link">Conceito</a>
+                <a href="#estrutura" class="nav-link">Estrutura</a>
+                <a href="#metodo" class="nav-link">Método</a>
+                <a href="#localizacao" class="nav-link">Localização</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-nav-mobile" data-cta="nav-mobile">Reservar matrícula</a>
             </nav>
 
             <div class="nav-actions">
-                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-nav" id="nav-tecnofit-cta">
-                    Matrícula Online <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-nav" data-cta="nav">
+                    Reservar matrícula
                 </a>
-                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -66,403 +140,503 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-badge reveal-fade">
-                <i class="fa-solid fa-circle-check purple-glow-text"></i> EXCLUSIVIDADE MÁXIMA NO BATEL / PRAÇA DO JAPÃO
-            </div>
-            <h1 class="hero-title reveal-slide-up">
-                A Nova Forma de <br>Treinar é <span class="gradient-purple-text">QUADROS</span>
+    <main>
+
+    <!-- 1. HERO -->
+    <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+            <div class="hero-img parallax-bg"></div>
+            <div class="hero-scrim"></div>
+        </div>
+        <div class="container hero-inner">
+            <span class="eyebrow reveal">Academia premium no Batel · Praça do Japão</span>
+            <h1 class="hero-title">
+                Treino personalizado, com hora marcada e no máximo <span class="accent">5 alunos por professor</span>.
             </h1>
-            <p class="hero-subtitle reveal-fade">
-                Um conceito híbrido pioneiro que une a estrutura completa de uma academia de ponta ao acompanhamento ultra-personalizado de um estúdio. Treino planejado, com hora marcada e limite rígido de alunos.
+            <p class="hero-sub reveal">
+                A Quadros Gym une a estrutura completa de uma academia premium ao acompanhamento próximo de um estúdio de personal. Sem superlotação, sem improviso e sem perder tempo esperando aparelho.
             </p>
-            <div class="hero-actions reveal-fade">
-                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-magnetic" id="hero-primary-cta">
-                    <span>Matricule-se Agora (Tecnofit)</span> <i class="fa-solid fa-chevron-right"></i>
-                </a>
-                <a href="https://wa.me/5541999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20hor%C3%A1rios%20da%20Quadros%20Gym%21" target="_blank" rel="noopener" class="btn btn-secondary btn-magnetic">
-                    <i class="fa-brands fa-whatsapp"></i> Falar com Consultor
-                </a>
-            </div>
 
-            <!-- Trust Badge Stats -->
-            <div class="hero-stats reveal-fade">
-                <div class="stat-box">
-                    <span class="stat-num">Máx. 5</span>
-                    <span class="stat-label">Alunos por Professor</span>
-                </div>
-                <div class="stat-line"></div>
-                <div class="stat-box">
-                    <span class="stat-num">100%</span>
-                    <span class="stat-label">Treino Planejado & Marcado</span>
-                </div>
-                <div class="stat-line"></div>
-                <div class="stat-box">
-                    <span class="stat-num">Premium</span>
-                    <span class="stat-label">Equipamentos & Vestiários</span>
-                </div>
+            <ul class="hero-bullets reveal">
+                <li><i class="fa-solid fa-check"></i> Máximo 5 alunos por professor</li>
+                <li><i class="fa-solid fa-check"></i> Treino planejado para seu objetivo</li>
+                <li><i class="fa-solid fa-check"></i> Vestiários premium com toalhas e amenities</li>
+                <li><i class="fa-solid fa-check"></i> Equipamentos importados e ambiente climatizado</li>
+            </ul>
+
+            <div class="hero-actions reveal">
+                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-magnetic" data-cta="hero-primary">
+                    Reservar minha matrícula <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/5541999999999?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20os%20hor%C3%A1rios%20e%20planos%20da%20Quadros%20Gym." target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-cta="hero-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Falar com a equipe
+                </a>
             </div>
+            <p class="hero-microcopy reveal">Vagas limitadas por horário para manter o padrão de acompanhamento.</p>
         </div>
-        
-        <!-- Scroll indicator -->
-        <a href="#concept" class="scroll-down">
-            <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-            <span class="scroll-label">Explore o Conceito</span>
-        </a>
+        <a href="#problema" class="scroll-cue" aria-label="Rolar para baixo"><span></span></a>
     </section>
 
-    <!-- Concept Section -->
-    <section class="concept-section" id="concept">
+    <!-- 2. PROBLEMA -->
+    <section class="section problem" id="problema">
         <div class="container">
-            <div class="concept-grid">
-                
-                <div class="concept-info reveal-slide-right">
-                    <span class="section-tag">O CONCEITO HYBRIDO</span>
-                    <h2 class="section-title">Por que a Quadros é <span class="purple-glow-text">diferente</span> de tudo?</h2>
-                    <p class="section-desc">
-                        Academias convencionais oferecem aparelhos, mas deixam você sozinho no meio da superlotação. Estúdios de personal oferecem atenção, mas limitam o espaço e cobram mensalidades astronômicas.
-                    </p>
-                    <p class="section-desc">
-                        A **Quadros Gym** resolveu essa equação. Desenvolvemos um modelo focado em **performance, conforto e resultados reais**, ideal para quem não tem tempo a perder e exige tratamento vip.
-                    </p>
-                    
-                    <div class="features-list">
-                        <div class="feat-item">
-                            <div class="feat-icon"><i class="fa-solid fa-user-shield"></i></div>
-                            <div>
-                                <h3>Sem Filas para Equipamentos</h3>
-                                <p>Com limite rígido de alunos por horário, você executa seu treino de forma contínua e otimizada.</p>
-                            </div>
-                        </div>
-                        <div class="feat-item">
-                            <div class="feat-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                            <div>
-                                <h3>Treino Planejado e Acompanhado</h3>
-                                <p>Seu treino é estruturado especificamente para suas metas e acompanhado de perto por profissionais de elite.</p>
-                            </div>
-                        </div>
-                    </div>
+            <header class="section-head">
+                <span class="eyebrow">O diagnóstico</span>
+                <h2 class="section-title">O problema não é falta de academia.<br><span class="accent">É falta de acompanhamento.</span></h2>
+            </header>
+            <div class="problem-layout">
+                <div class="problem-copy">
+                    <p>Academia comum até parece resolver. Você se matricula, recebe uma ficha, tenta manter constância e, quando percebe, está treinando sozinho em um ambiente cheio, esperando aparelho e sem saber se está executando certo.</p>
+                    <p>Para quem tem rotina intensa, isso não funciona. O treino precisa ser objetivo, acompanhado e compatível com o seu tempo.</p>
                 </div>
-
-                <!-- Comparison Interactive Card -->
-                <div class="comparison-card-wrapper reveal-slide-left">
-                    <div class="comparison-card">
-                        <h3 class="comp-title">Academia Convencional X <span class="purple-glow-text">Quadros Gym</span></h3>
-                        
-                        <div class="comp-table">
-                            <div class="comp-row head">
-                                <span>Característica</span>
-                                <span>Comum</span>
-                                <span class="highlight">Quadros</span>
-                            </div>
-                            <div class="comp-row">
-                                <span>Alunos p/ Professor</span>
-                                <span>30 a 50+</span>
-                                <span class="highlight">Máximo 5</span>
-                            </div>
-                            <div class="comp-row">
-                                <span>Uso de Aparelhos</span>
-                                <span>Filas e Espera</span>
-                                <span class="highlight">Sem Filas</span>
-                            </div>
-                            <div class="comp-row">
-                                <span>Treino Personalizado</span>
-                                <span>Custo Extra</span>
-                                <span class="highlight">Incluso no Plano</span>
-                            </div>
-                            <div class="comp-row">
-                                <span>Vestiário & Amenities</span>
-                                <span>Básico</span>
-                                <span class="highlight">Hotel Boutique</span>
-                            </div>
-                        </div>
-                        
-                        <div class="comp-footer">
-                            <p>Chega de treinar no improviso. Seu corpo e seu tempo merecem o padrão Quadros.</p>
-                        </div>
-                    </div>
-                </div>
-
+                <ul class="pain-grid">
+                    <li class="pain reveal"><i class="fa-solid fa-clipboard-list"></i> Treino genérico</li>
+                    <li class="pain reveal"><i class="fa-solid fa-users"></i> Ambiente lotado</li>
+                    <li class="pain reveal"><i class="fa-solid fa-eye-slash"></i> Falta de correção</li>
+                    <li class="pain reveal"><i class="fa-solid fa-arrow-trend-down"></i> Pouca constância</li>
+                    <li class="pain reveal"><i class="fa-solid fa-hourglass-half"></i> Tempo perdido</li>
+                    <li class="pain reveal"><i class="fa-solid fa-circle-question"></i> Baixo acompanhamento</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Structure Highlights -->
-    <section class="structure-section" id="structure">
-        <div class="container">
-            <div class="section-header reveal-fade">
-                <span class="section-tag">INFRAESTRUTURA EXCLUSIVA</span>
-                <h2 class="section-title text-center">Estrutura Feita Para Alta Performance</h2>
-                <p class="section-desc text-center max-w-600">
-                    Equipamentos de alta tecnologia italiana, ambientes climatizados com sonorização premium e o conforto que você precisa no coração de Curitiba.
-                </p>
-            </div>
+    <!-- 3. CONCEITO -->
+    <section class="section concept" id="conceito">
+        <div class="container concept-inner">
+            <span class="eyebrow">O conceito Quadros</span>
+            <h2 class="section-title">Não é academia comum.<br>E também não é só personal.</h2>
+            <p class="lead">
+                Em academias convencionais, você encontra estrutura, mas perde atenção. Em estúdios pequenos, você encontra acompanhamento, mas muitas vezes perde variedade de equipamentos.
+            </p>
+            <p class="lead">
+                A Quadros Gym foi criada para unir os dois mundos: estrutura premium, equipamentos de alto padrão, acompanhamento próximo e uma rotina organizada por horários.
+            </p>
+            <blockquote class="impact">
+                Você não precisa escolher entre estrutura e atenção.<br><span class="accent">Na Quadros, você tem os dois.</span>
+            </blockquote>
+        </div>
+    </section>
 
+    <!-- 4. COMPARATIVO (wow: pin + scrub no desktop) -->
+    <section class="section compare" id="comparativo">
+        <div class="container">
+            <header class="section-head">
+                <span class="eyebrow">Comparativo honesto</span>
+                <h2 class="section-title">A diferença aparece já no <span class="accent">primeiro treino</span>.</h2>
+            </header>
+            <div class="compare-grid" id="compare-grid">
+                <article class="compare-col col-common">
+                    <h3>Academia comum</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-xmark"></i> 30 a 50+ alunos por professor</li>
+                        <li><i class="fa-solid fa-xmark"></i> Treino pouco acompanhado</li>
+                        <li><i class="fa-solid fa-xmark"></i> Filas em horários de pico</li>
+                        <li><i class="fa-solid fa-xmark"></i> Ambiente cheio e impessoal</li>
+                        <li><i class="fa-solid fa-xmark"></i> Vestiário básico</li>
+                        <li><i class="fa-solid fa-xmark"></i> Pouca previsibilidade</li>
+                    </ul>
+                </article>
+                <article class="compare-col col-quadros">
+                    <div class="compare-tag">Quadros Gym</div>
+                    <h3>Quadros Gym</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> No máximo 5 alunos por professor</li>
+                        <li><i class="fa-solid fa-check"></i> Treino planejado e acompanhado</li>
+                        <li><i class="fa-solid fa-check"></i> Horário marcado</li>
+                        <li><i class="fa-solid fa-check"></i> Ambiente premium e controlado</li>
+                        <li><i class="fa-solid fa-check"></i> Vestiários padrão hotel-boutique</li>
+                        <li><i class="fa-solid fa-check"></i> Mais constância, conforto e direção</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="#metodo" class="btn btn-ghost">Conhecer o método Quadros <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MÉTODO -->
+    <section class="section method" id="metodo">
+        <div class="container">
+            <header class="section-head">
+                <span class="eyebrow">O método</span>
+                <h2 class="section-title">Para quem quer treinar com direção,<br><span class="accent">não no improviso.</span></h2>
+            </header>
+            <ol class="method-steps">
+                <li class="step reveal">
+                    <span class="step-num">01</span>
+                    <h3>Diagnóstico inicial</h3>
+                    <p>Entendemos sua rotina, objetivo, histórico e disponibilidade antes de montar qualquer treino.</p>
+                </li>
+                <li class="step reveal">
+                    <span class="step-num">02</span>
+                    <h3>Planejamento do treino</h3>
+                    <p>Seu treino é pensado para sua meta: hipertrofia, emagrecimento, saúde, condicionamento ou longevidade.</p>
+                </li>
+                <li class="step reveal">
+                    <span class="step-num">03</span>
+                    <h3>Horário marcado</h3>
+                    <p>Você treina em horários controlados, evitando superlotação e espera por aparelho.</p>
+                </li>
+                <li class="step reveal">
+                    <span class="step-num">04</span>
+                    <h3>Acompanhamento próximo</h3>
+                    <p>Com no máximo 5 alunos por professor, há mais correção, atenção e ajuste em cada série.</p>
+                </li>
+                <li class="step reveal">
+                    <span class="step-num">05</span>
+                    <h3>Evolução contínua</h3>
+                    <p>O treino é acompanhado e ajustado conforme sua evolução, sem estagnar na mesma ficha.</p>
+                </li>
+            </ol>
+            <div class="section-cta">
+                <a href="#simulador" class="btn btn-primary" data-cta="method">Ver disponibilidade de horários</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. ESTRUTURA -->
+    <section class="section structure" id="estrutura">
+        <div class="container">
+            <header class="section-head">
+                <span class="eyebrow">Estrutura premium</span>
+                <h2 class="section-title">Um ambiente pensado para quem valoriza<br>tempo, conforto e resultado.</h2>
+                <p class="section-desc">A experiência não termina no treino. Da escolha dos equipamentos aos vestiários, cada detalhe foi pensado para uma rotina mais confortável, organizada e eficiente.</p>
+            </header>
             <div class="structure-grid">
-                <!-- Card 1 -->
-                <div class="struct-card reveal-slide-up" data-tilt>
-                    <div class="struct-card-bg"></div>
+                <article class="struct-card reveal" data-tilt>
                     <div class="struct-icon"><i class="fa-solid fa-dumbbell"></i></div>
-                    <h3>Equipamentos Importados</h3>
-                    <p>Linha completa de força e cardio com design italiano, ergonomia avançada e biometria integrada.</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="struct-card reveal-slide-up" data-tilt>
-                    <div class="struct-card-bg"></div>
+                    <h3>Equipamentos importados</h3>
+                    <p>Máquinas de tecnologia italiana, selecionadas para entregar ergonomia, segurança e precisão de movimento.</p>
+                </article>
+                <article class="struct-card reveal" data-tilt>
                     <div class="struct-icon"><i class="fa-solid fa-shower"></i></div>
-                    <h3>Vestiários VIP</h3>
-                    <p>Toalhas macias higienizadas, duchas com controle de temperatura de alta pressão e amenities premium.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="struct-card reveal-slide-up" data-tilt>
-                    <div class="struct-card-bg"></div>
-                    <div class="struct-icon"><i class="fa-solid fa-calendar-check"></i></div>
-                    <h3>Agendamento via App</h3>
-                    <p>Marque e desmarque seus horários de treino com total flexibilidade pelo celular.</p>
-                </div>
+                    <h3>Vestiários premium</h3>
+                    <p>Toalhas limpas, amenities de banho e estrutura confortável para antes e depois do treino.</p>
+                </article>
+                <article class="struct-card reveal" data-tilt>
+                    <div class="struct-icon"><i class="fa-solid fa-wind"></i></div>
+                    <h3>Ambiente controlado</h3>
+                    <p>Fluxo limitado por horário e climatização para preservar a experiência e o acompanhamento.</p>
+                </article>
+                <article class="struct-card reveal" data-tilt>
+                    <div class="struct-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Localização nobre</h3>
+                    <p>Na Av. Sete de Setembro, próximo à Praça do Japão, em uma das regiões mais valorizadas de Curitiba.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Goal Simulator (Tecnofit Funnel) -->
-    <section class="wizard-section" id="wizard">
+    <!-- 7. EXPERIÊNCIA -->
+    <section class="section experience" id="experiencia">
+        <div class="container experience-inner">
+            <div class="experience-copy">
+                <span class="eyebrow">A experiência</span>
+                <h2 class="section-title">Chegue, treine bem<br>e siga o seu dia.</h2>
+                <p class="section-desc">A Quadros foi desenhada para encaixar na rotina de quem não pode perder tempo. Você agenda seu horário, chega sabendo que será acompanhado, treina em um ambiente organizado e sai com a sensação de que cada minuto foi bem usado.</p>
+            </div>
+            <ol class="journey">
+                <li class="reveal"><span>1</span> Agenda seu horário</li>
+                <li class="reveal"><span>2</span> Chega em um ambiente sem superlotação</li>
+                <li class="reveal"><span>3</span> Recebe acompanhamento próximo</li>
+                <li class="reveal"><span>4</span> Treina com estrutura completa</li>
+                <li class="reveal"><span>5</span> Finaliza com conforto no vestiário</li>
+                <li class="reveal"><span>6</span> Mantém constância com mais facilidade</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 8. SIMULADOR -->
+    <section class="section wizard-section" id="simulador">
         <div class="container">
-            <div class="wizard-wrapper reveal-fade">
-                <div class="wizard-header">
-                    <span class="section-tag">SIMULADOR DE TREINO</span>
-                    <h2>Descubra Seu Plano de Sucesso</h2>
-                    <p>Selecione seu objetivo e receba uma recomendação exclusiva para iniciar seu cadastro online na Quadros Gym.</p>
-                </div>
+            <div class="wizard-wrapper reveal">
+                <header class="wizard-header">
+                    <span class="eyebrow">Simulador de metas</span>
+                    <h2>Descubra o melhor caminho para o seu objetivo.</h2>
+                    <p>Responda 3 perguntas rápidas e veja qual perfil de treino combina melhor com a sua rotina.</p>
+                </header>
 
                 <div class="wizard-container" id="wizard-container">
-                    
-                    <!-- Step 1: Goal Select -->
+                    <!-- Step 1 -->
                     <div class="wizard-step active" id="step-1">
-                        <h3 class="step-question">1. Qual é o seu objetivo principal de treino?</h3>
+                        <h3 class="step-question">1. Qual o seu principal objetivo?</h3>
                         <div class="options-grid">
-                            <button class="opt-btn" data-goal="hipertrofia">
-                                <i class="fa-solid fa-circle-nodes"></i>
-                                <span>Hipertrofia & Definição</span>
-                            </button>
-                            <button class="opt-btn" data-goal="emagrecimento">
-                                <i class="fa-solid fa-fire"></i>
-                                <span>Emagrecimento & Queima</span>
-                            </button>
-                            <button class="opt-btn" data-goal="saude">
-                                <i class="fa-solid fa-seedling"></i>
-                                <span>Saúde, Postura & Longevidade</span>
-                            </button>
+                            <button class="opt-btn" data-step="1" data-value="hipertrofia"><i class="fa-solid fa-circle-nodes"></i><span>Hipertrofia</span></button>
+                            <button class="opt-btn" data-step="1" data-value="emagrecimento"><i class="fa-solid fa-fire"></i><span>Emagrecimento</span></button>
+                            <button class="opt-btn" data-step="1" data-value="saude"><i class="fa-solid fa-seedling"></i><span>Saúde e longevidade</span></button>
+                            <button class="opt-btn" data-step="1" data-value="condicionamento"><i class="fa-solid fa-bolt"></i><span>Condicionamento</span></button>
+                            <button class="opt-btn" data-step="1" data-value="constancia"><i class="fa-solid fa-repeat"></i><span>Voltar a treinar com constância</span></button>
                         </div>
                     </div>
-
-                    <!-- Step 2: Experience level -->
+                    <!-- Step 2 -->
                     <div class="wizard-step" id="step-2">
-                        <h3 class="step-question">2. Qual é a sua frequência semanal planejada?</h3>
+                        <h3 class="step-question">2. Como é a sua rotina?</h3>
                         <div class="options-grid">
-                            <button class="opt-btn" data-freq="2-3">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>2 a 3 vezes por semana</span>
-                            </button>
-                            <button class="opt-btn" data-freq="4-5">
-                                <i class="fa-solid fa-calendar-check"></i>
-                                <span>4 a 5 vezes por semana</span>
-                            </button>
+                            <button class="opt-btn" data-step="2" data-value="manha"><i class="fa-solid fa-mug-hot"></i><span>Manhã</span></button>
+                            <button class="opt-btn" data-step="2" data-value="almoco"><i class="fa-solid fa-sun"></i><span>Almoço</span></button>
+                            <button class="opt-btn" data-step="2" data-value="tarde"><i class="fa-solid fa-cloud-sun"></i><span>Fim de tarde</span></button>
+                            <button class="opt-btn" data-step="2" data-value="noite"><i class="fa-solid fa-moon"></i><span>Noite</span></button>
                         </div>
-                        <button class="btn btn-secondary btn-back" onclick="goToStep(1)"><i class="fa-solid fa-arrow-left"></i> Voltar</button>
+                        <button class="btn-back" data-back="1"><i class="fa-solid fa-arrow-left"></i> Voltar</button>
                     </div>
-
-                    <!-- Step 3: Result & Direct Tecnofit CTA -->
+                    <!-- Step 3 -->
                     <div class="wizard-step" id="step-3">
+                        <h3 class="step-question">3. O que mais te incomoda em academia comum?</h3>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-step="3" data-value="lotacao"><i class="fa-solid fa-users"></i><span>Lotação</span></button>
+                            <button class="opt-btn" data-step="3" data-value="acompanhamento"><i class="fa-solid fa-user-slash"></i><span>Falta de acompanhamento</span></button>
+                            <button class="opt-btn" data-step="3" data-value="tempo"><i class="fa-solid fa-hourglass-half"></i><span>Falta de tempo</span></button>
+                            <button class="opt-btn" data-step="3" data-value="direcao"><i class="fa-solid fa-compass"></i><span>Não saber o que fazer</span></button>
+                            <button class="opt-btn" data-step="3" data-value="constancia"><i class="fa-solid fa-arrow-trend-down"></i><span>Falta de constância</span></button>
+                        </div>
+                        <button class="btn-back" data-back="2"><i class="fa-solid fa-arrow-left"></i> Voltar</button>
+                    </div>
+                    <!-- Result -->
+                    <div class="wizard-step" id="step-result">
                         <div class="result-card">
-                            <div class="result-icon"><i class="fa-solid fa-award purple-glow-text"></i></div>
-                            <h3 class="result-title">Seu Perfil de Treino Ideal: <span id="res-profile-name" class="gradient-purple-text">QG PERFORMANCE</span></h3>
-                            <p class="result-text" id="res-profile-desc">
-                                Com base nos seus objetivos, nossa equipe estruturará uma periodização com suporte de personal trainers e agendamentos de até 4x por semana.
-                            </p>
-                            
+                            <div class="result-icon"><i class="fa-solid fa-award accent"></i></div>
+                            <h3 class="result-title">Seu perfil: <span id="res-name" class="accent">QG PERFORMANCE</span></h3>
+                            <p class="result-text" id="res-desc">Seu perfil combina com um método de treino acompanhado, com horário marcado e fluxo controlado. Na Quadros Gym, você treina com mais direção, conforto e previsibilidade.</p>
                             <div class="result-cta-box">
-                                <p>Garanta sua vaga exclusiva. Realize a pré-matrícula oficial online e nossa equipe entrará em contato para agendar sua primeira sessão.</p>
-                                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary" id="wizard-tecnofit-cta">
-                                    Concluir Matrícula no Tecnofit <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                                </a>
+                                <p>Garanta sua vaga no horário ideal. Inicie a matrícula online e a equipe entra em contato para organizar seu primeiro treino.</p>
+                                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-lg" id="wizard-cta" data-cta="wizard">Iniciar matrícula online <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <button class="btn btn-secondary btn-back" onclick="goToStep(2)"><i class="fa-solid fa-arrow-left"></i> Ajustar Respostas</button>
+                        <button class="btn-back" data-back="restart"><i class="fa-solid fa-rotate-left"></i> Refazer</button>
                     </div>
-
                 </div>
 
-                <!-- Step Progress Dots -->
-                <div class="wizard-progress">
-                    <span class="progress-dot active" id="dot-1"></span>
-                    <span class="progress-dot" id="dot-2"></span>
-                    <span class="progress-dot" id="dot-3"></span>
+                <div class="wizard-progress" aria-hidden="true">
+                    <span class="progress-dot active"></span>
+                    <span class="progress-dot"></span>
+                    <span class="progress-dot"></span>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Careers Section (Faça parte do QG Team) -->
-    <section class="careers-section" id="careers">
+    <!-- 9. PARA QUEM É / NÃO É -->
+    <section class="section fit" id="para-quem">
         <div class="container">
-            <div class="careers-grid">
-                
-                <div class="careers-info reveal-slide-right">
-                    <span class="section-tag">TRABALHE CONOSCO</span>
-                    <h2 class="section-title">Faça Parte do <span class="purple-glow-text">QG Team</span></h2>
-                    <p class="section-desc">
-                        Estamos sempre buscando profissionais apaixonados por saúde, performance e atendimento ao cliente para se juntarem à nossa equipe de Curitiba. Se você é profissional de educação física ou estudante de marketing digital, nós queremos te conhecer.
-                    </p>
-                    
-                    <div class="positions-list">
-                        <div class="position-item">
-                            <span class="pos-badge">Batel</span>
-                            <h4>Professor / Personal Trainer (Educação Física)</h4>
-                            <p>Acompanhamento de treinos personalizados, foco técnico e orientação com limite de 5 alunos por horário.</p>
-                        </div>
-                        <div class="position-item">
-                            <span class="pos-badge">Remoto / Híbrido</span>
-                            <h4>Estágio em Marketing Digital / Criação</h4>
-                            <p>Suporte na criação de conteúdo de alto impacto, mídias sociais e campanhas locais.</p>
-                        </div>
-                    </div>
+            <header class="section-head">
+                <span class="eyebrow">Honestidade de marca</span>
+                <h2 class="section-title">A Quadros não foi feita para todo mundo.<br><span class="accent">E esse é o ponto.</span></h2>
+            </header>
+            <div class="fit-grid">
+                <div class="fit-col fit-yes">
+                    <h3><i class="fa-solid fa-circle-check"></i> Para quem é</h3>
+                    <ul>
+                        <li>Quem valoriza acompanhamento próximo</li>
+                        <li>Quem não gosta de academia lotada</li>
+                        <li>Quem tem rotina corrida</li>
+                        <li>Quem busca constância de verdade</li>
+                        <li>Quem quer estrutura premium</li>
+                        <li>Quem quer treinar em um ambiente reservado</li>
+                        <li>Quem entende que tempo e conforto fazem parte do treino</li>
+                    </ul>
                 </div>
-
-                <div class="careers-form-card reveal-slide-left">
-                    <div class="apply-card">
-                        <h3>Candidatura Rápida</h3>
-                        <form id="apply-form" action="https://wa.me/5541999999999" method="GET" target="_blank">
-                            <div class="input-group">
-                                <label for="candidate-name">Nome Completo</label>
-                                <input type="text" id="candidate-name" required placeholder="Digite seu nome">
-                            </div>
-                            <div class="input-group">
-                                <label for="candidate-role">Vaga de Interesse</label>
-                                <select id="candidate-role" required>
-                                    <option value="" disabled selected>Selecione a vaga</option>
-                                    <option value="Professor de Educação Física">Professor de Educação Física</option>
-                                    <option value="Estágio em Marketing Digital">Estágio em Marketing Digital</option>
-                                    <option value="Atendimento / Recepção">Atendimento / Recepção VIP</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-full">
-                                Enviar Candidatura via WhatsApp <i class="fa-brands fa-whatsapp"></i>
-                            </button>
-                        </form>
-                    </div>
+                <div class="fit-col fit-no">
+                    <h3><i class="fa-solid fa-circle-minus"></i> Para quem não é</h3>
+                    <ul>
+                        <li>Quem procura apenas o menor preço</li>
+                        <li>Quem prefere treinar sem horário</li>
+                        <li>Quem não se importa com superlotação</li>
+                        <li>Quem busca uma academia comum</li>
+                        <li>Quem não valoriza acompanhamento</li>
+                    </ul>
                 </div>
+            </div>
+            <p class="fit-note">A proposta da Quadros é manter padrão. Por isso, os horários são controlados e as vagas por turma são limitadas.</p>
+        </div>
+    </section>
 
+    <!-- 10. PROVA / CONFIANÇA -->
+    <section class="section proof" id="prova">
+        <div class="container">
+            <header class="section-head">
+                <span class="eyebrow">Confiança</span>
+                <h2 class="section-title">Um padrão criado para ser sentido<br>no <span class="accent">primeiro treino</span>.</h2>
+            </header>
+            <div class="proof-grid">
+                <figure class="proof-photo reveal">
+                    <img src="gym_interior.png" alt="Interior premium da Quadros Gym com iluminação roxa e equipamentos importados" loading="lazy" width="800" height="800">
+                </figure>
+                <div class="proof-placeholder reveal">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <h3>Espaço para prova real</h3>
+                    <p><strong>Para o cliente:</strong> adicione aqui depoimentos reais de alunos, avaliações do Google, fotos do espaço, número de alunos atendidos, tempo de mercado e credenciais dos professores. Prova real é o que mais aumenta a conversão — nada de números inventados.</p>
+                    <a href="https://www.instagram.com/quadrosgym/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="fa-brands fa-instagram"></i> Ver o espaço no Instagram</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacts, Map & Hours Section -->
-    <section class="contact-section" id="contact">
+    <!-- 11. LOCALIZAÇÃO -->
+    <section class="section contact" id="localizacao">
         <div class="container">
             <div class="contact-grid">
-                
-                <div class="contact-info reveal-slide-right">
-                    <span class="section-tag">LOCALIZAÇÃO & HORÁRIOS</span>
-                    <h2 class="section-title">Onde Estamos</h2>
-                    <p class="section-desc">
-                        Localizada estrategicamente no Batel/Água Verde, com fácil acesso e estacionamento conveniado. Venha nos visitar.
-                    </p>
-                    
-                    <!-- Live open status badge -->
-                    <div class="live-status-wrapper">
-                        <div class="live-status-dot" id="live-dot"></div>
-                        <span class="live-status-text" id="live-status-text">Calculando funcionamento...</span>
+                <div class="contact-info">
+                    <span class="eyebrow">Localização &amp; horários</span>
+                    <h2 class="section-title">No Batel, perto da<br>Praça do Japão.</h2>
+                    <p class="section-desc">A Quadros Gym está na Av. Sete de Setembro, 4995, em uma região estratégica para quem mora ou trabalha no Batel, Água Verde, Bigorrilho, Centro e arredores.</p>
+
+                    <div class="live-status">
+                        <span class="live-dot" id="live-dot"></span>
+                        <span id="live-text">Calculando funcionamento…</span>
                     </div>
 
-                    <div class="details-list">
-                        <div class="detail-item">
-                            <div class="detail-icon"><i class="fa-solid fa-map-pin"></i></div>
-                            <div class="detail-text">
-                                <h3>Av. Sete de Setembro, 4995</h3>
-                                <p>Água Verde / Batel, Curitiba - PR, 80240-000</p>
-                            </div>
+                    <div class="detail">
+                        <div class="detail-icon"><i class="fa-solid fa-map-pin"></i></div>
+                        <div>
+                            <h3>Av. Sete de Setembro, 4995</h3>
+                            <p>Batel / Água Verde, Curitiba — PR, 80240-000</p>
                         </div>
-                        <div class="detail-item">
-                            <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
-                            <div class="detail-text">
-                                <h3>Horários de Funcionamento</h3>
-                                <div class="table-hours">
-                                    <div class="table-row"><span>Segunda a Sexta</span><span>06:00h - 22:00h</span></div>
-                                    <div class="table-row font-semibold"><span>Sábado</span><span>08:00h - 14:00h</span></div>
-                                    <div class="table-row text-muted"><span>Domingo</span><span>Fechado</span></div>
-                                </div>
+                    </div>
+                    <div class="detail">
+                        <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h3>Horários</h3>
+                            <div class="hours">
+                                <div><span>Seg a Sex</span><span>06:00 — 22:00</span></div>
+                                <div><span>Sábado</span><span>08:00 — 14:00</span></div>
+                                <div class="muted"><span>Domingo</span><span>Fechado</span></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="socials-list">
-                        <a href="https://www.instagram.com/quadrosgym/" target="_blank" rel="noopener" aria-label="Acesse nosso Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" aria-label="Chame no WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" aria-label="Faça sua matrícula no Tecnofit"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <div class="contact-actions">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Sete+de+Setembro,+4995,+Curitiba+-+PR" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="fa-solid fa-route"></i> Abrir rota no Google Maps</a>
+                        <a href="https://wa.me/5541999999999?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20Quadros%20Gym." target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-cta="contact-whatsapp"><i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://www.instagram.com/quadrosgym/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" aria-label="Matrícula Tecnofit"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
                     </div>
                 </div>
 
-                <!-- Google Maps Batel Curitiba -->
-                <div class="contact-map reveal-slide-left">
-                    <div class="map-wrapper-card">
-                        <iframe
-                            src="https://maps.google.com/maps?q=Av.%20Sete%20de%20Setembro%2C%204995%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2080240-000&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Localização da Quadros Gym no Batel, Curitiba">
-                        </iframe>
-                    </div>
+                <div class="contact-map reveal">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Av.%20Sete%20de%20Setembro%2C%204995%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2080240-000&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da Quadros Gym no Batel, Curitiba"></iframe>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- 12. FAQ -->
+    <section class="section faq" id="faq">
+        <div class="container faq-inner">
+            <header class="section-head">
+                <span class="eyebrow">Perguntas frequentes</span>
+                <h2 class="section-title">Tudo que você precisa saber<br>antes de começar.</h2>
+            </header>
+            <div class="faq-list" id="faq-list">
+                <!-- items injected pattern: button + panel -->
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>A Quadros Gym funciona como uma academia comum?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Não. A Quadros une estrutura de academia premium com acompanhamento próximo e horário marcado. O objetivo é evitar superlotação e garantir mais atenção durante o treino.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>Preciso ter experiência para treinar?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Não. O treino é ajustado ao seu nível, objetivo e histórico. A proposta é justamente dar direção para quem não quer treinar no improviso.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>O limite de 5 alunos por professor é real?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Sim. Esse limite existe para preservar o padrão de acompanhamento e evitar que o aluno se sinta sozinho no treino.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>Como funciona o horário marcado?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Você agenda o melhor horário disponível e treina dentro de um fluxo controlado. Isso ajuda a manter organização, conforto e acompanhamento.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>A Quadros é indicada para emagrecimento?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Sim. O treino pode ser planejado para emagrecimento, hipertrofia, condicionamento, saúde ou retorno à rotina de exercícios.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>Tem vestiário?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Sim. A estrutura conta com vestiários premium, toalhas limpas e amenities de banho para mais conforto antes e depois do treino.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>A matrícula é feita online?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Sim. Você pode iniciar sua matrícula pelo link oficial da Tecnofit e depois seguir com a orientação da equipe.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>Posso conhecer antes de me matricular?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Sim. O ideal é falar com a equipe para entender disponibilidade de horários, planos e funcionamento.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>A Quadros é mais cara que uma academia comum?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>A proposta é diferente. Em vez de competir por preço, a Quadros entrega acompanhamento próximo, ambiente controlado e estrutura premium. É para quem valoriza tempo, conforto e direção no treino.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>Onde fica a Quadros Gym?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Na Av. Sete de Setembro, 4995, região Batel / Água Verde, próximo à Praça do Japão, em Curitiba.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>Posso treinar todos os dias?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Depende do plano, objetivo e disponibilidade de horários. A equipe pode orientar o melhor formato para sua rotina.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false"><span>Como começo?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p>Clique em "Reservar minha matrícula" ou fale com a equipe. O primeiro passo é verificar disponibilidade e escolher o melhor horário para seu perfil.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. CTA FINAL -->
+    <section class="section final-cta">
+        <div class="container final-inner">
+            <h2 class="section-title">Seu treino não precisa ser lotado,<br>improvisado ou impessoal.</h2>
+            <p class="section-desc">Conheça uma academia onde cada horário é controlado, cada treino tem direção e cada detalhe foi pensado para quem exige mais da própria rotina.</p>
+            <div class="hero-actions center">
+                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-magnetic" data-cta="final-primary">Reservar minha matrícula <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://wa.me/5541999999999?text=Ol%C3%A1%21%20Quero%20falar%20com%20a%20equipe%20da%20Quadros%20Gym." target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-cta="final-whatsapp"><i class="fa-brands fa-whatsapp"></i> Falar com a equipe</a>
+            </div>
+            <p class="hero-microcopy">As vagas são limitadas por horário para manter o padrão de acompanhamento.</p>
+        </div>
+    </section>
+
+    </main>
+
     <!-- Footer -->
-    <footer class="footer-main">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>QUADROS<span class="purple-glow-text">GYM</span></h3>
-                    <p>A nova forma de treinar no Batel. Atendimento exclusivo, com hora marcada e limite de alunos por horário.</p>
-                </div>
-                <div class="footer-nav">
-                    <h4>Links</h4>
-                    <a href="#home">Home</a>
-                    <a href="#concept">O Conceito</a>
-                    <a href="#structure">Estrutura</a>
-                    <a href="#wizard">Objetivos</a>
-                </div>
-                <div class="footer-cta">
-                    <h4>Matricule-se Já</h4>
-                    <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
-                        Cadastrar no Tecnofit
-                    </a>
-                </div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="logo-lockup.png" alt="Quadros Gym" class="footer-logo" width="140" height="140" loading="lazy">
+                <p>A academia premium do Batel para quem treina com hora marcada, acompanhamento próximo e no máximo 5 alunos por professor.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Quadros Gym. Todos os direitos reservados. Batel, Curitiba - PR.</p>
-                <p class="dev-tag">Conceito de Alto Padrão</p>
+            <nav class="footer-nav" aria-label="Rodapé">
+                <h4>Navegar</h4>
+                <a href="#conceito">Conceito</a>
+                <a href="#metodo">Método</a>
+                <a href="#estrutura">Estrutura</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>Av. Sete de Setembro, 4995<br>Batel / Água Verde, Curitiba — PR</p>
+                <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-cta="footer">Reservar matrícula</a>
             </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Quadros Gym · Batel, Curitiba — PR. Todos os direitos reservados.</p>
+            <p class="muted">Academia premium · Praça do Japão</p>
         </div>
     </footer>
 
-    <!-- Floating Action WhatsApp -->
-    <a href="https://wa.me/5541999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20hor%C3%A1rios%20da%20Quadros%20Gym%21" target="_blank" rel="noopener" class="floating-wa-btn" aria-label="Contato direto via WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <!-- Sticky mobile CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <a href="https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy" target="_blank" rel="noopener" class="btn btn-primary" data-cta="sticky">Reservar matrícula</a>
+        <a href="https://wa.me/5541999999999?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20Quadros%20Gym." target="_blank" rel="noopener" class="sticky-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
 
-    <!-- Scripts -->
     <script src="app.js"></script>
 </body>
 </html>
