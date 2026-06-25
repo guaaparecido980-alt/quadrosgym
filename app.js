@@ -243,7 +243,7 @@
             const resDesc = document.getElementById('res-desc');
             const cta = document.getElementById('wizard-cta');
             if (resName) resName.textContent = name;
-            if (resDesc) resDesc.textContent = `Seu perfil combina com ${focus} Na Quadros Gym, isso acontece com horário marcado, no máximo 5 alunos por professor e um ambiente sem superlotação — mais direção, conforto e previsibilidade.`;
+            if (resDesc) resDesc.textContent = `Seu perfil combina com ${focus} Na Quadros Gym, isso acontece com horário marcado, no máximo 3 alunos por professor e um ambiente sem superlotação — mais direção, conforto e previsibilidade.`;
             if (cta) {
                 const params = new URLSearchParams({ perfil: name, objetivo: answers[1] || '', rotina: answers[2] || '' });
                 cta.href = `https://app.tecnofit.com.br/ng/customer-register/MTk5NDUy?${params.toString()}`;
