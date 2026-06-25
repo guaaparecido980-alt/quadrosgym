@@ -110,7 +110,7 @@ ul, ol { list-style: none; }
 
 .lead { color: var(--text-muted); font-size: clamp(1.02rem, 1.6vw, 1.18rem); margin-bottom: var(--s-4); max-width: 64ch; }
 
-.section-head { margin-bottom: var(--s-7); max-width: 760px; }
+.section-head { margin-bottom: var(--s-6); max-width: 760px; }
 
 /* ==========================================================================
    CUSTOM CURSOR (desktop)
@@ -229,9 +229,9 @@ ul, ol { list-style: none; }
 
 .section { padding-block: 60px; position: relative; }
 @media (min-width: 768px) { .section { padding-block: 96px; } }
-@media (min-width: 1024px) { .section { padding-block: 140px; } }
+@media (min-width: 1024px) { .section { padding-block: 112px; } }
 
-.section-cta { margin-top: var(--s-7); }
+.section-cta { margin-top: var(--s-6); }
 .section-cta.center, .hero-actions.center { display: flex; justify-content: center; flex-wrap: wrap; gap: var(--s-3); }
 
 /* ==========================================================================
@@ -280,7 +280,7 @@ ul, ol { list-style: none; }
 
 .problem .section-head { margin-bottom: var(--s-5); }
 .problem-layout { display: grid; grid-template-columns: 1fr; gap: var(--s-5); align-items: start; }
-@media (min-width: 900px) { .problem-layout { grid-template-columns: 1.05fr 1fr; gap: var(--s-8); } }
+@media (min-width: 900px) { .problem-layout { grid-template-columns: 1.05fr 1fr; gap: var(--s-7); } }
 .problem-copy p { color: var(--text-muted); font-size: 1.05rem; margin-bottom: var(--s-4); }
 .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .pain { display: flex; align-items: center; gap: 12px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line-soft); border-radius: 12px; font-size: 0.9rem; color: var(--text); transition: border-color 0.35s var(--ease), transform 0.35s var(--ease); }
@@ -344,7 +344,7 @@ ul, ol { list-style: none; }
    ========================================================================== */
 
 .experience-inner { display: grid; grid-template-columns: 1fr; gap: var(--s-7); align-items: center; }
-@media (min-width: 900px) { .experience-inner { grid-template-columns: 1fr 1fr; gap: var(--s-8); } }
+@media (min-width: 900px) { .experience-inner { grid-template-columns: 1fr 1fr; gap: var(--s-7); } }
 .journey { display: flex; flex-direction: column; gap: 12px; }
 .journey li { display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--line-soft); border-radius: 12px; font-size: 0.95rem; transition: border-color 0.35s var(--ease), transform 0.35s var(--ease); }
 .journey li:hover { border-color: var(--line-strong); transform: translateX(6px); }
