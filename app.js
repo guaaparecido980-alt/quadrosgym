@@ -299,6 +299,22 @@
             });
         }
 
+        /* ------------------------------------------------------------------
+           12. COOKIE CONSENT (LGPD)
+           ------------------------------------------------------------------ */
+        const banner = document.getElementById('cookie-banner');
+        if (banner) {
+            let consent = null;
+            try { consent = localStorage.getItem('qg-cookie-consent'); } catch (e) {}
+            if (!consent) banner.classList.add('show');
+            const decide = (value) => {
+                try { localStorage.setItem('qg-cookie-consent', value); } catch (e) {}
+                banner.classList.remove('show');
+            };
+            document.getElementById('cookie-accept')?.addEventListener('click', () => decide('accepted'));
+            document.getElementById('cookie-reject')?.addEventListener('click', () => decide('rejected'));
+        }
+
         if (hasST) ScrollTrigger.refresh();
     }
 })();

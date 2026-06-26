@@ -55,6 +55,11 @@ body {
     background-attachment: fixed;
 }
 
+/* Anti-flash: enquanto as fontes carregam, evita a troca visivel de fonte / pulo do hero.
+   So aplica com JS (html.js); sem JS o conteudo aparece normalmente. */
+html.js body { opacity: 0; }
+html.js body.ready { opacity: 1; transition: opacity 0.4s ease; }
+
 /* grao cinematografico sutil */
 body::after {
     content: '';
@@ -502,6 +507,38 @@ ul, ol { list-style: none; }
 .sticky-cta .btn { flex: 1; }
 .sticky-wa { flex-shrink: 0; width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; background: #25d366; color: #fff; font-size: 1.5rem; }
 @media (max-width: 767px) { .sticky-cta { display: flex; } }
+
+/* ==========================================================================
+   COOKIE CONSENT (LGPD)
+   ========================================================================== */
+
+.cookie-banner {
+    position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 200;
+    max-width: 540px; margin: 0 auto;
+    background: rgba(13, 13, 17, 0.97); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px;
+    box-shadow: var(--shadow); display: none; flex-direction: column; gap: 16px;
+}
+.cookie-banner.show { display: flex; }
+.cookie-banner p { font-size: 0.83rem; color: var(--text-muted); line-height: 1.55; }
+.cookie-banner a { color: var(--accent-soft); text-decoration: underline; }
+.cookie-actions { display: flex; gap: 10px; justify-content: flex-end; }
+@media (max-width: 767px) { .cookie-banner { bottom: 84px; } }
+
+/* ==========================================================================
+   LEGAL / PRIVACY PAGE
+   ========================================================================== */
+
+.legal { padding-top: 140px; padding-bottom: 80px; }
+.legal-prose { max-width: 760px; }
+.legal-prose h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.4rem, 3vw, 2rem); color: #fff; margin: var(--s-6) 0 var(--s-3); }
+.legal-prose h2:first-of-type { margin-top: var(--s-5); }
+.legal-prose p, .legal-prose li { color: var(--text-muted); font-size: 0.95rem; margin-bottom: var(--s-3); }
+.legal-prose ul { padding-left: 22px; }
+.legal-prose li { list-style: disc; margin-bottom: 8px; }
+.legal-prose a { color: var(--accent-soft); text-decoration: underline; }
+.legal-prose .updated { font-size: 0.8rem; color: var(--text-dim); }
+.legal-back { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-soft); font-family: var(--font-accent); font-weight: 600; font-size: 0.8rem; margin-bottom: var(--s-4); }
 
 /* ==========================================================================
    REVEAL (Estrategia A — visivel por padrao; JS anima com gsap.from)

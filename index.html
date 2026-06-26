@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Anti-flash de fonte: revela a pagina com fade quando as fontes estao prontas -->
+    <script>
+        document.documentElement.classList.add('js');
+        (function () {
+            function ready() { if (document.body) document.body.classList.add('ready'); }
+            if (document.fonts && document.fonts.ready) { document.fonts.ready.then(ready); }
+            window.addEventListener('load', ready);
+            setTimeout(ready, 1200); /* seguranca: nunca deixa a pagina escondida */
+        })();
+    </script>
+
     <!-- SEO -->
     <title>Quadros Gym | Academia Premium com Treino Personalizado no Batel</title>
     <meta name="description" content="Academia premium no Batel, Curitiba, com treino personalizado, hora marcada, máximo de 3 alunos por professor, equipamentos importados e vestiários completos.">
@@ -630,9 +641,18 @@
         </div>
         <div class="container footer-bottom">
             <p>&copy; 2026 Quadros Gym · Batel, Curitiba — PR. Todos os direitos reservados.</p>
-            <p class="muted">Academia premium · Praça do Japão</p>
+            <p class="muted"><a href="privacidade.html">Política de Privacidade</a> · Academia premium · Praça do Japão</p>
         </div>
     </footer>
+
+    <!-- Cookie consent (LGPD) -->
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+        <p>Usamos cookies para melhorar sua experiência, lembrar suas preferências e entender como você navega no site (incluindo o mapa do Google). Ao continuar, você concorda com a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+        <div class="cookie-actions">
+            <button class="btn btn-ghost btn-sm" id="cookie-reject">Recusar</button>
+            <button class="btn btn-primary btn-sm" id="cookie-accept">Aceitar</button>
+        </div>
+    </div>
 
     <!-- Sticky mobile CTA -->
     <div class="sticky-cta" id="sticky-cta">
