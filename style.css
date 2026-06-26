@@ -507,9 +507,12 @@ ul, ol { list-style: none; }
    REVEAL (Estrategia A — visivel por padrao; JS anima com gsap.from)
    ========================================================================== */
 
-/* nada de opacity:0 no CSS para revelados via GSAP. Fallback IO usa .is-in */
-.no-gsap .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
-.no-gsap .reveal.is-in { opacity: 1; transform: none; }
+/* Esconder reveals (para o fallback IO) SOMENTE no desktop.
+   No mobile o conteudo e SEMPRE visivel — nunca depende de JS/scroll/GSAP. */
+@media (min-width: 769px) {
+    .no-gsap .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+    .no-gsap .reveal.is-in { opacity: 1; transform: none; }
+}
 
 /* ==========================================================================
    ACCESSIBILITY
